@@ -1,21 +1,19 @@
-var url="https://quotes.rest/qod?language=en";
+const url = "https://type.fit/api/quotes/";
+
 fetch(url)
-.then(response=>{
-return response.json();
-})
-.then(data =>{
-    console.log(data);
-    this.data=data;
-displayquote();
-})
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
 
+        let Button = document.querySelector(".button");
+        Button.addEventListener("click", function () {
+            let RandomQuotes = Math.floor(Math.random() * data.length);
+            let Quotes = data[RandomQuotes].text;
 
- function displayquote(data)
- {
-    let index = Math.floor(Math.random()*data.length);
-    let quote = data[index].text;
- }
- function giveadvice(){
-     displayquote();
- }
+            document.querySelector(".text").innerHTML = Quotes;
 
+        })
+
+    });
