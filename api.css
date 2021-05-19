@@ -1,0 +1,42 @@
+h1{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: brown;
+    text-align: center;
+}
+.button{
+    
+    border: solid 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding:16px 32px;
+    color: red;
+    transition-duration: 0.32s;
+
+}
+.button:hover 
+{
+
+    background-color: #4CAF50;
+    color: yellow;
+
+
+}
+.bd{
+    border: solid 20px slateblue;
+    margin: 20px 10px;
+    padding:16px 32px;
+}
+body{
+    background-image: url("./download\ \(4\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    color: chartreuse;
+}
